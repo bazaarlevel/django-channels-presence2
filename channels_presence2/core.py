@@ -1,9 +1,6 @@
 from time import mktime
 from datetime import datetime
-try:
-        from collections.abc import Iterable
-except ImportError:
-        from collections import Iterable
+from collections.abc import Iterable
 from asgiref.sync import sync_to_async
 from django.contrib.auth import get_user_model
 from django.conf import settings
